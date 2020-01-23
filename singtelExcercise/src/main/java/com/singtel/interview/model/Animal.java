@@ -10,7 +10,16 @@ public class Animal {
     private boolean canWalk = true;
     private boolean canSing = true;
     private boolean canSwim = false;
+    private boolean singInSecondLanguage = false;
     private Language secondLanguage;
+
+    public boolean isSingInSecondLanguage() {
+        return singInSecondLanguage;
+    }
+
+    public void setSingInSecondLanguage(boolean singInSecondLanguage) {
+        this.singInSecondLanguage = singInSecondLanguage;
+    }
 
     public Language getSecondLanguage() {
         return secondLanguage;
@@ -57,7 +66,10 @@ public class Animal {
     }
 
     public String sing() {
-        return LanguageUtil.getSoundBySecondLanguage(getSecondLanguage(), AnimalEnum.DEFAULT);
+        if(isSingInSecondLanguage()) {
+            return LanguageUtil.getSoundBySecondLanguage(getSecondLanguage(), AnimalEnum.DEFAULT);
+        }
+        return "I am making a sound";
     }
 
     public String fly() {

@@ -13,12 +13,15 @@ public class SecondLanguageTest {
     public void testSecondLanguage() {
         Animal rooster = new Rooster();
         rooster.setSecondLanguage(Language.DANISH);
+        rooster.setSingInSecondLanguage(true);
         assertEquals(DanishSounds.ROOSTER.getSound(), rooster.sing());
     }
 
     @Test
     public void testSecondLanguageNotSet() {
         Animal rooster = new Rooster();
+        rooster.setSecondLanguage(Language.DANISH);
+        rooster.setSingInSecondLanguage(false);
         assertEquals(EnglishSounds.ROOSTER.getSound(), rooster.sing());
     }
 }
