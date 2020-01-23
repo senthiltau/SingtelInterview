@@ -2,7 +2,8 @@ package com.singtel.interview.model;
 
 public enum AnimalSounds {
     DOG("Woof, woof"),
-    CAT("Meow");
+    CAT("Meow"),
+    DOESNT_SING("I dont sing");
 
     private final String sound;
 
