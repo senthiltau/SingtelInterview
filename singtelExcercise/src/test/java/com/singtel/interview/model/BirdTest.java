@@ -50,4 +50,28 @@ public class BirdTest {
         assertEquals(BirdSounds.ROOSTER.getSound(), actual);
     }
 
+    @Test
+    public void testParrotFriendOfCat() {
+        Parrot bird = new Parrot();
+        bird.setFriendAnimal(new Cat());
+        String actual = bird.sing();
+        assertEquals(AnimalSounds.CAT.getSound(), actual);
+    }
+
+    @Test
+    public void testParrotFriendOfDog() {
+        Parrot bird = new Parrot();
+        bird.setFriendAnimal(new Dog());
+        String actual = bird.sing();
+        assertEquals(AnimalSounds.DOG.getSound(), actual);
+    }
+
+    @Test
+    public void testParrotFriendOfRooster() {
+        Parrot bird = new Parrot();
+        bird.setFriendAnimal(new Rooster());
+        String actual = bird.sing();
+        assertEquals(BirdSounds.ROOSTER.getSound(), actual);
+    }
+
 }
