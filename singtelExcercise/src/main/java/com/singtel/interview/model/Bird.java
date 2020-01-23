@@ -4,6 +4,11 @@ import com.singtel.interview.model.enumeration.BirdSounds;
 
 public class Bird extends Animal {
 
+    public Bird() {
+        setCanFly(true);
+        setCanSing(true);
+    }
+
     @Override
     public String fly() {
         return "I am flying";

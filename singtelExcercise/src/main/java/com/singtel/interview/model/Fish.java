@@ -24,6 +24,12 @@ public class Fish extends Animal implements SeaAnimals {
         this.size = size;
     }
 
+    public Fish() {
+        setCanWalk(false);
+        setCanSing(false);
+        setCanSwim(true);
+    }
+
     @Override
     public String walk() {
         return "I don't walk";
