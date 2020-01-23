@@ -1,6 +1,5 @@
 package com.singtel.interview.model;
 
-import com.singtel.interview.Chicken;
 import com.singtel.interview.model.enumeration.AnimalSounds;
 import com.singtel.interview.model.enumeration.BirdSounds;
 import org.junit.Test;
@@ -33,7 +32,7 @@ public class BirdTest {
 
     @Test
     public void testChickenCannotFly() {
-        Chicken bird = new Hen();
+        bird = new Hen();
         String actual = bird.fly();
         assertEquals("I cannot fly. My wings are clipped :(", actual);
     }
@@ -47,7 +46,7 @@ public class BirdTest {
 
     @Test
     public void testRoosterSound() {
-        Chicken bird = new Rooster();
+        bird = new Rooster();
         String actual = bird.sing();
         assertEquals(BirdSounds.ROOSTER.getSound(), actual);
     }

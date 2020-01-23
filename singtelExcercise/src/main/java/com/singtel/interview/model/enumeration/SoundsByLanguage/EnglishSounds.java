@@ -2,13 +2,12 @@ package com.singtel.interview.model.enumeration.SoundsByLanguage;
 
 import java.util.Arrays;
 
-public enum DanishSounds {
-
-    ROOSTER("kykyliky");
+public enum EnglishSounds {
+    ROOSTER("Cock-a-doodle-doo");
 
     private final String sound;
 
-    DanishSounds(String sound) {
+    EnglishSounds(String sound) {
         this.sound = sound;
     }
 
@@ -18,9 +17,9 @@ public enum DanishSounds {
 
     public static String getByName(String name) {
         return Arrays
-                .stream(DanishSounds.values())
-                .filter(danishSounds -> danishSounds.name().equalsIgnoreCase(name))
-                .findFirst().map(DanishSounds::getSound)
+                .stream(EnglishSounds.values())
+                .filter(englishSounds -> englishSounds.name().equalsIgnoreCase(name))
+                .findFirst().map(EnglishSounds::getSound)
                 .orElse(null);
     }
 }

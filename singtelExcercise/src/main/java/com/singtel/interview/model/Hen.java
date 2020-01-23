@@ -2,7 +2,6 @@ package com.singtel.interview.model;
 
 import com.singtel.interview.Chicken;
 import com.singtel.interview.model.enumeration.BirdSounds;
-import com.singtel.interview.model.enumeration.Languages;
 
 public class Hen extends Bird implements Chicken {
 
@@ -11,7 +10,7 @@ public class Hen extends Bird implements Chicken {
     }
 
     @Override
-    public String sing(Languages language) {
+    public String sing() {
         return BirdSounds.HEN.getSound();
     }
 

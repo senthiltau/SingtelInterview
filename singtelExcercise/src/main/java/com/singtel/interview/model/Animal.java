@@ -1,6 +1,8 @@
 package com.singtel.interview.model;
 
-import com.singtel.interview.model.enumeration.Languages;
+import com.singtel.interview.model.enumeration.AnimalEnum;
+import com.singtel.interview.model.enumeration.Language;
+import com.singtel.interview.util.LanguageUtil;
 
 public class Animal {
 
@@ -8,6 +10,15 @@ public class Animal {
     private boolean canWalk = true;
     private boolean canSing = true;
     private boolean canSwim = false;
+    private Language secondLanguage;
+
+    public Language getSecondLanguage() {
+        return secondLanguage;
+    }
+
+    public void setSecondLanguage(Language secondLanguage) {
+        this.secondLanguage = secondLanguage;
+    }
 
     public boolean isCanSwim() {
         return canSwim;
@@ -45,15 +56,8 @@ public class Animal {
         return "I am walking";
     }
 
-    public String sing(Languages language) {
-        String sound = "";
-        switch (language) {
-            case ENGLISH:
-                sound = "I am making a sound";
-            default:
-                break;
-        }
-        return sound;
+    public String sing() {
+        return LanguageUtil.getSoundBySecondLanguage(getSecondLanguage(), AnimalEnum.DEFAULT);
     }
 
     public String fly() {

@@ -1,8 +1,8 @@
 package com.singtel.interview.model;
 
 import com.singtel.interview.Chicken;
-import com.singtel.interview.model.enumeration.BirdSounds;
-import com.singtel.interview.model.enumeration.Languages;
+import com.singtel.interview.model.enumeration.AnimalEnum;
+import com.singtel.interview.util.LanguageUtil;
 
 public class Rooster extends Bird implements Chicken {
 
@@ -11,8 +11,8 @@ public class Rooster extends Bird implements Chicken {
     }
 
     @Override
-    public String sing(Languages language) {
-        return BirdSounds.ROOSTER.getSound();
+    public String sing() {
+        return LanguageUtil.getSoundBySecondLanguage(getSecondLanguage(), AnimalEnum.ROOSTER);
     }
 
     public String fly() {

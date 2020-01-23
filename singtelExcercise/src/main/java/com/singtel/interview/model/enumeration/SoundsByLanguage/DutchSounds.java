@@ -16,11 +16,11 @@ public enum DutchSounds {
         return sound;
     }
 
-    public String getByName(String name) {
+    public static String getByName(String name) {
         return Arrays
                 .stream(DutchSounds.values())
                 .filter(dutchSounds -> dutchSounds.name().equalsIgnoreCase(name))
-                .findFirst().map(Enum::name)
+                .findFirst().map(DutchSounds::getSound)
                 .orElse(null);
     }
 }

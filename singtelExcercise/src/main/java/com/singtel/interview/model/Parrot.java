@@ -1,7 +1,5 @@
 package com.singtel.interview.model;
 
-import com.singtel.interview.model.enumeration.Languages;
-
 public class Parrot extends Bird {
 
     private Animal friendAnimal;
@@ -12,8 +10,8 @@ public class Parrot extends Bird {
     }
 
     @Override
-    public String sing(Languages language) {
-        return friendAnimal.sing(language);
+    public String sing() {
+        return friendAnimal.sing();
     }
 
     public Animal getFriendAnimal() {

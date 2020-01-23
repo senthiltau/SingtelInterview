@@ -1,6 +1,6 @@
 package com.singtel.interview.model.enumeration;
 
-public enum Languages {
+public enum Language {
     DANISH,
     DUTCH,
     FINNISH,

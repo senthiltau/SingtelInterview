@@ -1,7 +1,6 @@
 package com.singtel.interview.model;
 
 import com.singtel.interview.model.enumeration.BirdSounds;
-import com.singtel.interview.model.enumeration.Languages;
 
 public class Bird extends Animal {
 
@@ -16,7 +15,7 @@ public class Bird extends Animal {
     }
 
     @Override
-    public String sing(Languages language) {
+    public String sing() {
         return BirdSounds.DEFAULT.getSound();
     }
 }
