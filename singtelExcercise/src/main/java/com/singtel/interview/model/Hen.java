@@ -1,6 +1,7 @@
 package com.singtel.interview.model;
 
 import com.singtel.interview.Chicken;
+import com.singtel.interview.model.enumeration.BirdSounds;
 
 public class Hen extends Bird implements Chicken {
     @Override

@@ -1,6 +1,7 @@
 package com.singtel.interview.model;
 
 import com.singtel.interview.SeaAnimals;
+import com.singtel.interview.model.enumeration.AnimalSounds;
 
 public class Fish extends Animal implements SeaAnimals {
 

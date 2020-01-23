@@ -1,5 +1,7 @@
 package com.singtel.interview.model;
 
+import com.singtel.interview.model.enumeration.BirdSounds;
+
 public class Bird extends Animal {
 
     @Override

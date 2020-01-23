@@ -1,6 +1,9 @@
 package com.singtel.interview.model;
 
 import com.singtel.interview.SeaAnimals;
+import com.singtel.interview.model.enumeration.AnimalSounds;
+import com.singtel.interview.model.enumeration.ColorEnum;
+import com.singtel.interview.model.enumeration.SizeEnum;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

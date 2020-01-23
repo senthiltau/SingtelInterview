@@ -1,4 +1,4 @@
-package com.singtel.interview.model;
+package com.singtel.interview.model.enumeration;
 
 public enum BirdSounds {
 
