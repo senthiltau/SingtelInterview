@@ -8,4 +8,8 @@ public class Animal {
     public String sing() {
         return "I am making a sound";
     }
+
+    public String fly() {
+        return "I don't fly";
+    }
 }

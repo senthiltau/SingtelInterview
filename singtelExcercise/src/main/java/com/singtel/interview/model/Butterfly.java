@@ -1,13 +1,14 @@
 package com.singtel.interview.model;
 
-public class Bird extends Animal {
+public class Butterfly extends Animal {
 
     @Override
     public String fly() {
-        return "I am flying";
+        return "I can fly";
     }
 
+    @Override
     public String sing() {
-        return BirdSounds.DEFAULT.getSound();
+        return "I don't sing";
     }
 }

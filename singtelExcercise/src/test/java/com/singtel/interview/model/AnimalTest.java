@@ -48,10 +48,10 @@ public class AnimalTest {
     }
 
     @Test
-    public void testSharkSpecialSKills() {
+    public void testSharkSpecialSkills() {
         fish = new Shark();
         String actual = fish.specialSkills();
-        assertEquals("I ate other fish", actual);
+        assertEquals("I eat other fish", actual);
     }
 
     @Test
@@ -65,5 +65,19 @@ public class AnimalTest {
     public void testDolphinCanSwim() {
         SeaAnimals dolphin = new Dolphin();
         assertEquals("I can swim", dolphin.swim());
+    }
+
+    @Test
+    public void testButterfly() {
+        Animal butterfly = new Butterfly();
+        assertEquals("I don't sing", butterfly.sing());
+        assertEquals("I can fly", butterfly.fly());
+    }
+
+    @Test
+    public void testCaterpillar() {
+        Animal caterpillar = new CaterPillar();
+        assertEquals("I cannot walk, but crawl", caterpillar.walk());
+        assertEquals("I can't fly", caterpillar.fly());
     }
 }
