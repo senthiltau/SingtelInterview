@@ -1,5 +1,7 @@
 package com.singtel.interview.model;
 
+import com.singtel.interview.model.enumeration.Languages;
+
 public class Animal {
 
     private boolean canFly = false;
@@ -43,8 +45,15 @@ public class Animal {
         return "I am walking";
     }
 
-    public String sing() {
-        return "I am making a sound";
+    public String sing(Languages language) {
+        String sound = "";
+        switch (language) {
+            case ENGLISH:
+                sound = "I am making a sound";
+            default:
+                break;
+        }
+        return sound;
     }
 
     public String fly() {

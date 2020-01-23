@@ -1,5 +1,7 @@
 package com.singtel.interview.model;
 
+import com.singtel.interview.model.enumeration.Languages;
+
 public class Butterfly extends Animal {
 
     public Butterfly() {
@@ -14,7 +16,7 @@ public class Butterfly extends Animal {
     }
 
     @Override
-    public String sing() {
+    public String sing(Languages language) {
         return "I don't sing";
     }
 }

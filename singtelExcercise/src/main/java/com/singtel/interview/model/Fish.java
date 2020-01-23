@@ -2,6 +2,7 @@ package com.singtel.interview.model;
 
 import com.singtel.interview.SeaAnimals;
 import com.singtel.interview.model.enumeration.AnimalSounds;
+import com.singtel.interview.model.enumeration.Languages;
 
 public class Fish extends Animal implements SeaAnimals {
 
@@ -36,7 +37,7 @@ public class Fish extends Animal implements SeaAnimals {
     }
 
     @Override
-    public String sing() {
+    public String sing(Languages language) {
         return AnimalSounds.DOESNT_SING.getSound();
     }
 
