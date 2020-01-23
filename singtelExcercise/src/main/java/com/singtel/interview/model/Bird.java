@@ -1,11 +1,11 @@
 package com.singtel.interview.model;
 
 public class Bird extends Animal {
-    public void fly() {
-        System.out.println("I am flying");
+    public String fly() {
+        return "I am flying";
     }
 
-    public void sing() {
-        System.out.println("I am Singing");
+    public String sing() {
+        return BirdSounds.DEFAULT.getSound();
     }
 }
