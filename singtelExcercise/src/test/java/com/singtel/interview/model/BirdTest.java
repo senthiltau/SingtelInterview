@@ -1,7 +1,7 @@
 package com.singtel.interview.model;
 
+import com.singtel.interview.Chicken;
 import org.junit.Test;
-import org.mockito.InjectMocks;
 
 import static org.junit.Assert.assertEquals;
 
@@ -24,14 +24,14 @@ public class BirdTest {
 
     @Test
     public void testChickenSingingCluck() {
-        bird = new Chicken();
+        bird = new Hen();
         String actual = bird.sing();
-        assertEquals(BirdSounds.CHICKEN.getSound(), actual);
+        assertEquals(BirdSounds.HEN.getSound(), actual);
     }
 
     @Test
     public void testChickenCannotFly() {
-        bird = new Chicken();
+        Chicken bird = new Hen();
         String actual = bird.fly();
         assertEquals("I cannot fly. My wings are clipped :(", actual);
     }
@@ -41,6 +41,13 @@ public class BirdTest {
         Duck bird = new Duck();
         String actual = bird.swim();
         assertEquals("I am swimming", actual);
+    }
+
+    @Test
+    public void testRoosterSound() {
+        Chicken bird = new Rooster();
+        String actual = bird.sing();
+        assertEquals(BirdSounds.ROOSTER.getSound(), actual);
     }
 
 }

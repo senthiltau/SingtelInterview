@@ -1,9 +1,11 @@
 package com.singtel.interview.model;
 
-public class Chicken extends Bird {
+import com.singtel.interview.Chicken;
+
+public class Hen extends Bird implements Chicken {
     @Override
     public String sing() {
-        return BirdSounds.CHICKEN.getSound();
+        return BirdSounds.HEN.getSound();
     }
 
     @Override

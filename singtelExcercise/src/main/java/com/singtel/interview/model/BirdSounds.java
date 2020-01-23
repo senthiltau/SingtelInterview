@@ -3,7 +3,8 @@ package com.singtel.interview.model;
 public enum BirdSounds {
 
     DUCK("Quack, quack"),
-    CHICKEN("Cluck, cluck"),
+    HEN("Cluck, cluck"),
+    ROOSTER("Cock-a-doodle-doo"),
     DEFAULT("I am Singing");
 
     private final String sound;
